@@ -1,4 +1,9 @@
 set(SOURCE_FILES 
+    "ico.hpp"
+    "ico.cpp"
+    "png.hpp"
+    "png.cpp"
+    "utils.hpp"
     "main.cpp"
     )
 
