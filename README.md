@@ -2,19 +2,29 @@
 
 Create Windows icon file from a list of PNG images.
 
+Ico file header
+```C
+struct icon_header
+{
+    uint16_t reserved;
+    uint16_t type;
+    uint16_t count;
+};
+```
+
 Images are be stored in the PNG format inside the ico file with a small entry header (16 bytes):
 
 ```C
 struct icon_entry
 {
-    uint8_t width = 0;
-    uint8_t height = 0;
-    uint8_t color_count = 0;
-    uint8_t reserved = 0;
-    uint16_t planes = 0;
-    uint16_t bit_count = 0;
-    uint32_t size = 0;
-    uint32_t offset = 0;
+    uint8_t width;
+    uint8_t height;
+    uint8_t color_count;
+    uint8_t reserved;
+    uint16_t planes;
+    uint16_t bit_count;
+    uint32_t size;
+    uint32_t offset;
 };
 ```
 
