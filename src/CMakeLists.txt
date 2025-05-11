@@ -1,11 +1,4 @@
-set(SOURCE_FILES 
-    "ico.hpp"
-    "ico.cpp"
-    "png.hpp"
-    "png.cpp"
-    "utils.hpp"
-    "main.cpp"
-    )
+set(SOURCE_FILES "png2ico.cpp")
 
 add_executable(png2ico ${SOURCE_FILES})
 
